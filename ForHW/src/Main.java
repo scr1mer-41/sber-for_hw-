@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        tenth();
+        tenth();      // Здесь вызов методов по заданиям
     }
 
     public static void first() {
