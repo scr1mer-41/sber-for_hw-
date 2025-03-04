@@ -54,33 +54,3 @@ class ArraySorterBubbleAndQuick {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-//public class Main {
-//    public static void main(String[] args) {
-//
-//        int[] arr = {1313, 4312, 1, 32, 52, 3335, 24, 52};
-//
-//        ArrayBubble.printer(arr);
-//        ArrayBubble.quickSort(arr, 0, arr.length-1);
-//        ArrayBubble.printer(arr);
-//
-//        int[] arr2 = {1313, 4312, 1, 32, 52, 3335, 24, 52};
-//
-//        ArrayBubble.printer(arr2);
-//        ArrayBubble.quickSort(arr2, 0, arr.length-1);
-//        ArrayBubble.printer(arr2);
-//
-//
-//
-//    }
-//}
