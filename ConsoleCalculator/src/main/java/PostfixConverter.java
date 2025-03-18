@@ -16,7 +16,7 @@ public class PostfixConverter {
                     while (!operationStack.isEmpty() && operationStack.peek().type() != TokenType.OPEN_BRACKET) {
                         postfixExpression.add(operationStack.pop());
                     }
-                    operationStack.pop(); // открывающая скобка
+                    operationStack.pop();
                 }
                 case BINARY_OPERATION -> {
                     while (!operationStack.isEmpty() && getPriority(operationStack.peek()) >= getPriority(token)) {
@@ -39,6 +39,6 @@ public class PostfixConverter {
                 case MULTIPLY, DIVIDE -> 2;
             };
         }
-        return 0; // для открывающей скобки
+        return 0;
     }
 }
