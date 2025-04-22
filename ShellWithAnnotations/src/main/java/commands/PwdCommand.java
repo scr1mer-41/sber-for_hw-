@@ -10,10 +10,8 @@ public class PwdCommand implements Command {
 
     @Override
     public void execute(String[] args) {
-        // Получаем текущую рабочую директорию
         String currentDir = System.getProperty("user.dir");
 
-        // Можно использовать Paths для более "чистого" пути
         Path path = Paths.get(currentDir).toAbsolutePath().normalize();
 
         System.out.println(path.toString());
