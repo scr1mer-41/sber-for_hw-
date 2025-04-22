@@ -34,7 +34,6 @@ public class App {
         try {
             String json = serializer.serialize(person);
             System.out.println(json);
-            // Вывод: {"name":"Alice", "age_years":30, "hobbies":["Reading", "Hiking"]}
         } catch (JsonSerializationException e) {
             System.err.println("Serialization failed: " + e.getMessage());
         }
