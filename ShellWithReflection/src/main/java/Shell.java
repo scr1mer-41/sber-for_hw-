@@ -15,7 +15,6 @@ public class Shell {
     }
 
     public void loadCommands() {
-        // Автоматическая загрузка команд через Reflection
         try {
             Reflections reflections = new Reflections(
                     new ConfigurationBuilder()
@@ -33,7 +32,6 @@ public class Shell {
                 }
             }
 
-            // HelpCommand требует специальной инициализации
             registerCommand(new HelpCommand(commands));
 
         } catch (Exception e) {
