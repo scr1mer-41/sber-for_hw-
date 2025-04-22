@@ -5,7 +5,7 @@ public class Main {
             return;
         }
 
-        String className = args[0]; // Получаем первый аргумент
+        String className = args[0];
         ClassAnalyzer.analyzeClass(className);
     }
 }
