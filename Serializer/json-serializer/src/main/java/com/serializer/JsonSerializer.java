@@ -20,22 +20,18 @@ public class JsonSerializer {
 
         Class<?> clazz = object.getClass();
 
-        // Примитивы и строки
         if (isPrimitiveOrWrapper(clazz) || clazz == String.class) {
             return serializePrimitive(object);
         }
 
-        // Коллекции
         if (Collection.class.isAssignableFrom(clazz)) {
             return serializeCollection((Collection<?>) object);
         }
-
-        // Мапы
+        
         if (Map.class.isAssignableFrom(clazz)) {
             return serializeMap((Map<?, ?>) object);
         }
 
-        // Пользовательские объекты
         return serializeCustomObject(object);
     }
 
